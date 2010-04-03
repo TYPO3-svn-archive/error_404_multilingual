@@ -145,6 +145,7 @@ class ux_tslib_fe extends tslib_fe
 				curl_setopt($ch, CURLOPT_HEADER , false);
 				curl_setopt($ch, CURLOPT_POST, true);
 				curl_setopt($ch, CURLOPT_POSTFIELDS, 'tx_error404multilingual=1');
+				curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
 				curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 				curl_setopt($ch, CURLOPT_TIMEOUT, 5);
 				if ($GLOBALS['TYPO3_CONF_VARS']['SYS']['curlProxyTunnel']) {
