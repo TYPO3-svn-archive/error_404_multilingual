@@ -3,7 +3,7 @@
 ########################################################################
 # Extension Manager/Repository config file for ext "error_404_multilingual".
 #
-# Auto generated 03-04-2010 12:58
+# Auto generated 16-10-2010 13:09
 #
 # Manual updates:
 # Only the data in the array - everything else is removed by next
@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'description' => 'Shows the defined error page of the given language if the requested page or file could not be found',
 	'category' => 'fe',
 	'shy' => 0,
-	'version' => '0.2.8',
+	'version' => '0.2.9',
 	'dependencies' => 'realurl',
 	'conflicts' => 'error_404_handling',
 	'priority' => '',
@@ -44,7 +44,7 @@ $EM_CONF[$_EXTKEY] = array(
 		'suggests' => array(
 		),
 	),
-	'_md5_values_when_last_written' => 'a:4:{s:21:"class.ux_tslib_fe.php";s:4:"900f";s:12:"ext_icon.gif";s:4:"b4a8";s:17:"ext_localconf.php";s:4:"5f36";s:14:"doc/manual.sxw";s:4:"53a9";}',
+	'_md5_values_when_last_written' => 'a:4:{s:21:"class.ux_tslib_fe.php";s:4:"900f";s:12:"ext_icon.gif";s:4:"b4a8";s:17:"ext_localconf.php";s:4:"5f36";s:14:"doc/manual.sxw";s:4:"fb7b";}',
 	'suggests' => array(
 	),
 );
