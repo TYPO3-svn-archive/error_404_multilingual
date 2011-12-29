@@ -75,6 +75,7 @@ class ux_tslib_fe extends tslib_fe
 					'mail' => '',
 					'mailOnRedirect' => false,
 					'mailOn404' => false,
+					'stringConversion' => 'none',
 				);
 			}
 
@@ -165,7 +166,21 @@ class ux_tslib_fe extends tslib_fe
 				$urlcontent = file_get_contents($url.'?tx_error404multilingual=1');
 			}
 		}
-		echo $urlcontent;
+
+		switch ($this->typo3_conf_var_404['stringConversion']) {
+			case 'utf8_encode' : {
+				echo utf8_encode($urlcontent);
+				break;
+			}
+			case 'utf8_decode' : {
+				echo utf8_decode($urlcontent);
+				break;
+			}
+			default : {
+				echo $urlcontent;
+				break;
+			}
+		}
 	}
 
 	/**
