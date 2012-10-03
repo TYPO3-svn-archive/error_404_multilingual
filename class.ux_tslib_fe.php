@@ -220,8 +220,7 @@ class ux_tslib_fe extends tslib_fe
 	 */
 	function getCObj($id=0)
 	{
-		$TSFEclassName = t3lib_div::makeInstanceClassName('tslib_fe');
-		$GLOBALS['TSFE'] = new $TSFEclassName($TYPO3_CONF_VARS, $id, '0', 1, '', '','','');
+		$GLOBALS['TSFE'] = t3lib_div::makeInstance('tslib_fe', $TYPO3_CONF_VARS, $id, '0', 1, '', '','','');
 		$GLOBALS['TSFE']->connectToMySQL();
 		$GLOBALS['TSFE']->initFEuser();
 		$GLOBALS['TSFE']->fetch_the_id();

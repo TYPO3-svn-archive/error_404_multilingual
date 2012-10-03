@@ -3,7 +3,7 @@
 ########################################################################
 # Extension Manager/Repository config file for ext "error_404_multilingual".
 #
-# Auto generated 15-04-2012 22:27
+# Auto generated 03-10-2012 21:41
 #
 # Manual updates:
 # Only the data in the array - everything else is removed by next
@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'description' => 'Shows the defined error page of the given language if the requested page or file could not be found',
 	'category' => 'fe',
 	'shy' => 0,
-	'version' => '0.3.2',
+	'version' => '0.3.3',
 	'dependencies' => 'realurl',
 	'conflicts' => 'error_404_handling',
 	'priority' => '',
@@ -36,7 +36,7 @@ $EM_CONF[$_EXTKEY] = array(
 		'depends' => array(
 			'realurl' => '',
 			'php' => '5.0.0-0.0.0',
-			'typo3' => '4.0.0-4.99.999',
+			'typo3' => '4.0.0-0.0.0',
 		),
 		'conflicts' => array(
 			'error_404_handling' => '',
@@ -44,7 +44,7 @@ $EM_CONF[$_EXTKEY] = array(
 		'suggests' => array(
 		),
 	),
-	'_md5_values_when_last_written' => 'a:4:{s:21:"class.ux_tslib_fe.php";s:4:"293f";s:12:"ext_icon.gif";s:4:"b4a8";s:17:"ext_localconf.php";s:4:"4fc0";s:14:"doc/manual.sxw";s:4:"e6e8";}',
+	'_md5_values_when_last_written' => 'a:4:{s:21:"class.ux_tslib_fe.php";s:4:"0caa";s:12:"ext_icon.gif";s:4:"b4a8";s:17:"ext_localconf.php";s:4:"4fc0";s:14:"doc/manual.sxw";s:4:"f5d0";}',
 	'suggests' => array(
 	),
 );
